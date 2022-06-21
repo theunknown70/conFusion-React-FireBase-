@@ -7,7 +7,7 @@ import { Loading } from './LoadingComponent';
         return(
             <Card>
                 <Link to={`/menu/${dish._id}`} >
-                    <CardImg width="100%" src={dish.image} alt={dish.name} />
+                    <CardImg width="100%" src={require(`../images/${dish.image}`)} alt={dish.name} />
                     <CardImgOverlay>
                         <CardTitle>{dish.name}</CardTitle>
                     </CardImgOverlay>
