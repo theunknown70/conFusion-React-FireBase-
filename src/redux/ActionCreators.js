@@ -34,7 +34,7 @@ export const postComment = (dishId, rating, comment) => (dispatch) => {
                     dispatch(addComment(comment))
                 } else {
                     // doc.data() will be undefined in this case
-                    console.log("No such document!");
+                    console.log("No such document found!");
                 }
             });
     })
